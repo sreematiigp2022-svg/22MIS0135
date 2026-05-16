@@ -1,16 +1,32 @@
-# Stage 6
+# Stage 7 - Frontend Architecture
 
-## Priority Logic
+## Overview
 
-Priority order:
-1. Placement
-2. Result
-3. Event
+The frontend is responsible for displaying notifications to users and interacting with backend APIs. It is built using React and follows a component-based architecture.
 
-Notifications are sorted using:
-- Priority weight
-- Latest timestamp
+---
 
-The system keeps only the top 10 notifications in memory using array sorting and slicing.
+## Folder Structure
 
-New notifications are dynamically inserted and re-sorted to maintain priority order efficiently.
+```plaintext
+frontend/
+│
+├── src/
+│   ├── components/
+│   │     ├── NotificationCard.jsx
+│   │     ├── NotificationList.jsx
+│   │
+│   ├── pages/
+│   │     ├── NotificationsPage.jsx
+│   │
+│   ├── services/
+│   │     ├── api.js
+│   │
+│   ├── hooks/
+│   │     ├── useNotifications.js
+│   │
+│   ├── sockets/
+│   │     ├── socket.js
+│   │
+│   ├── App.js
+│   └── index.js
