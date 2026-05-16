@@ -1,11 +1,7 @@
-# Stage 2
+# Stage 3(detailed content)
 
+## Query Analysis
 
-
-{
-  "_id": "",
-  "studentId": "",
-  "type": "",
-  "message": "",
-  "timestamp": ""
-}
+SELECT * FROM notifications
+WHERE studentID = 1042 AND isRead = false
+ORDER BY createdAt ASC;
