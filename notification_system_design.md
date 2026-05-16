@@ -1,25 +1,11 @@
-# Stage 1
+# Stage 2
 
-## GET Notifications
 
-GET /notifications
 
-Response:
 {
-  "notifications": []
-}
-
-## POST Notification
-
-POST /notifications
-
-Request:
-{
-  "title": "Placement Alert",
-  "message": "TCS hiring"
-}
-
-Response:
-{
-  "success": true
+  "_id": "",
+  "studentId": "",
+  "type": "",
+  "message": "",
+  "timestamp": ""
 }
